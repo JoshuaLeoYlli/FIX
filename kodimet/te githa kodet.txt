@@ -1,0 +1,284 @@
+Main page
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fjalekalimi</title>
+<style>
+body {
+background-color: lightblue;
+padding: 30px;
+}
+</style>
+<script>
+function kontrolloFjalkalimin() {
+var fjalkalimi = document.getElementById("kutiaFjalkalimit");
+var fjalkalimiShkruar = fjalkalimi.value;
+if(fjalkalimiShkruar == "Ernest300") {
+return true;
+}
+alert("Ndalohet hyrja!Fjalkalimi eshte i Gabuar!");
+return false;
+}
+</script>
+</head>
+<body>
+<p style="font-size: 30pt;">ZBULIMI I DIAMANTIT TE MURGUT</p>
+<p>Ju lutemi, vendoseni fjalkalimin per te vizituar faqen</p>
+<p>Fjalkalimi:<input id="kutiaFjalkalimit" type="password"/></p>
+<a href="file:///C:/Users/TECHCOM/Documents/kodimet/About%20roblox.html" onclick="return kontrolloFjalkalimin();">
+Klikoni ketu per te kontrolluar fjalkalimin dhe per te vizituar faqen
+</a>
+</body>
+</html>
+
+
+Fjalkalimi
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fjalekalimi</title>
+<style>
+body {
+background-color: lightblue;
+padding: 30px;
+}
+</style>
+<script>
+function kontrolloFjalkalimin() {
+var fjalkalimi = document.getElementById("kutiaFjalkalimit");
+var fjalkalimiShkruar = fjalkalimi.value;
+if(fjalkalimiShkruar == "Ernest300") {
+return true;
+}
+alert("Ndalohet hyrja!Fjalkalimi eshte i Gabuar!");
+return false;
+}
+</script>
+</head>
+<body>
+<p style="font-size: 30pt;">ZBULIMI I DIAMANTIT TE MURGUT</p>
+<p>Ju lutemi, vendoseni fjalkalimin per te vizituar faqen</p>
+<p>Fjalkalimi:<input id="kutiaFjalkalimit" type="password"/></p>
+<a href="file:///C:/Users/TECHCOM/Documents/kodimet/About%20roblox.html" onclick="return kontrolloFjalkalimin();">
+Klikoni ketu per te kontrolluar fjalkalimin dhe per te vizituar faqen
+</a>
+</body>
+</html>
+
+
+Faqja e dyte
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shtepia Volkvol!</title>
+<style>
+.header {
+background-color: lightblue;
+width: 70%
+height: 50%
+}
+.text {
+text-align: center;
+font-size: 18pt;
+}
+.padding {
+padding: 25px;
+}
+
+<input[type="button"] {
+background-color: pink;
+}
+</style>
+<script>
+function shtoElement() {
+var elementiRi = document.createElement("div");
+elementiRi.innerHTML = document.getElementById("kutia").value;
+elementiRi.onclick = hiqElement;
+document.getElementById("lista").appendChild(elementiRi)
+ruajListen();
+}
+function hiqElement() {
+document.getElementById("lista").removeChild(this);
+ruajListen();
+}
+function ruajListen() {
+localStorage.listaRuajtur = document.getElementById("lista").innerHTML;
+}
+function ngarkoListen() {
+document.getElementById("lista").innerHTML = localStorage.listaRuajtur;
+}
+function ngarkoListen() {
+document.getElementById("lista").innerHTML = localStorage.listaRuajtur;
+for(var i = 0; i < lista.children.length; i++) {
+lista.children[i].onclick = hiqElement;
+}
+}
+</script>
+</head>
+<body>
+<div class="header text padding">
+<p>Shtepia Volkvol</p>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX///8AAAC8vLz8/Pz4+Pjo6OidnZ2WlpaGhoYzMzOpqakwMDCBgYHz8/P29vbt7e0cHBxiYmLR0dGPj4+zs7M6Ojpqamrf399TU1NMTEx8fHzCwsJbW1s9PT1FRUXNzc0LCwslJSV0dHQVFRUqKiqtra2jo6Ph4eFoi39JAAAEJklEQVR4nO3c23aqMBAG4A6IqGA9ooj12K2+/xtu1LaiEAiYMIH1f3dda1/MvyvJMIn9+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQZnkccpeg2Yho1uEuQq8+EXVbnXETJ6Tvgc1dhz5HuvHm3IVoc6Yf/TV3KZpY9CeYchejxY4SwjZmHNGTxZK7IPXoxdHhrki1/WtE8j+5a1JrkkpI5LaqlZtlJKR9m9qcc1bCeOvgrksdKzshtWfjcAQJW9TGCRJ+cdeljiCh1561JhREbE934wsSnrkLUyZzQ4wtuAtTZi5IOG5N87YUJGzPgzgSJexyV6bKUJQw5K5MmZUoIs1a8q64ECaMF9RWtKdRTkKircVd3/u6uQljbsMbONF+mBQ1eedwJQLGwnVDB/+dL7mAseDcxOmN05cOeNW8iOtS+eL9kbvgsgYlAxI17Fk8lg7YrFZ1KG7WcnBXXYLwnSnfgLtuaTLbfJYDd+GyRLOZYs0Yo3ayTmMkbbiLl+F8Vw9I1OMuv1jZbf6V8cNwyU47R2j0vm9X2OZTtiPuGGLD5067Z3XzRhhCB2NfF5+3+eBaZ/ne9MbU8c3TInM/l5B/P3xm6PRm+qjw91kKqgX0fDOXm9FjJ/wZLu3Sl02kuLxBxB4Lzf3n6lvHxND52+ON6fqTU/EjerfjDpPpcVZoOUPRLQxZRs40ki9NFZ/AhM2FO0/arrjsUk7cgVKEZ4VVhcYtOKoTmrfgbNRH7Bm193+O1SekjUF9eOefhoBk0ARueNATMH7vN+NE47PcMUwpexO+rWFrDBiL2H+N9lZjvH7krrl3Rm0BQ3duRPNmVzqHyfcdndbsH81ftugS6TvGJrUzVacxBcxpvN84p8hnyohfW0CiFXe2GxVjbqHAgPm31oDxesM+HM6/l6cCc8OmPyDz8LT6cXYZjNf6e7UEZHx7qisgkcfTm4q+K6IFx5Jaa0COFq7mgPW3cPIBz6r68kWtc0Xp6fbqouB6xo+gziVV9OXXV9fd+t0bNgk1jk6F3/V58u+2AlY+r5lYa+tFjR9UR2KAH92nR9XPa3i/bnIpKm/81zK/Mevvc77nF6ym/mP85xHtC6/zue5s5h8XX6v+yz/luxptZ55SeP7MPQ9Op+SaEL+A7PJ/j4eso4nPkbOc7izGPzKVXiP7vczmakBW7tobGHtv9nlAc/Cngv/tuZ+8TJRixjAmU3KRjKbisbtt5yY81lhyWb9/uGRROGnITDi+HwX4dZRaVRCvkhOZbTi96x9uz+xy7numTEUz7cK53LjvZVXaJJ/ZdnwbOHlBautejLp9oMbpL97ZgBmvDl3yrvvCnPucU5/exCfP0Iu/akymkdvChy/B+mjv5xMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMr7D8mLMgT5wEhdAAAAAElFTkSuQmCC">
+</div>
+<div style="background-color: lightgreen;">
+<p>Lista e detyrave per ekspoziten e diamantit.</p>
+<input type="text" id="kutia" value="Shkruani ketu detyren"/>
+<br/>
+<input type="button" value="Shto element" onclick="shtoElement();"/>
+<div id="lista"></div>
+<script>
+if(localStorage.listaRuajtur) {
+ngarkoListen();
+</script>
+</div>
+<a href="file:///C:/Users/TECHCOM/Documents/kodimet/Googlemaps.html">
+Shkoni ne google maps?
+</a>
+</body>
+</html>
+
+
+loja
+<!DOCTYPE html>
+<html>
+<head>
+<title>Loja</title>
+<style>
+#fusha {
+background-color: gray;
+background-size: cover;
+border: 1px solid black;
+height: 600px;
+width: 1220px;
+}
+.personazhi {
+background: url('iftuari.jpg');
+width: 120px;
+height: 120px;
+padding: 10px;
+margin: 10px;
+float: left;
+}
+.grabitesi {
+background: url('https://getcodingkids.com/wp-content/uploads/2016/05/Thief.jpg');
+width: 120px;
+height: 120px;
+padding: 10px;
+margin: 10px;
+float: left;
+}
+</style>
+</head>
+<body>
+<input type="button" value="Luaj" onclick="nisLojen()";/>
+<div id="fusha">
+<div class="personazhi">i ftuari</div>
+<div class="personazhi">i ftuari</div>
+<div class="personazhi">i ftuari</div>
+<div class="grabitesi"><a href="file:///C:/Users/TECHCOM/Documents/kodimet/1%20Pike.html">i panjohur</a></div>
+<div class="personazhi">i ftuar</div>
+<div class="personazhi">i ftuar</div>
+<div class="personazhi">i ftuar</div>
+<div class="personazhi">i ftuar</div>
+<div class="personazhi">i ftuar</div>
+<div class="personazhi">i ftuar</div>
+<div class="personazhi">i ftuar</div>
+<div class="personazhi">i ftuar</div>
+<div class="personazhi">i ftuar</div>
+<div class="personazhi">i ftuar</div>
+</div>
+<script>
+</script>
+</body>
+</html>
+
+
+pike e pare
+<!DOCTYPE html>
+<html>
+<head>
+<title>BRAVO!</title>
+<script>
+alert("Bravo 1 pike!")
+</script>
+</head>
+<body>
+<a href="file:///C:/Users/TECHCOM/Documents/kodimet/Loja%20nr.2.html">
+Loja tjeter→→→
+</a>
+</body>
+</html>
+
+
+loja e dyte
+<!DOCTYPE html>
+<html>
+<head>
+<title>Loja nr.2</title>
+<style>
+#fusha {
+background-color: gray;
+background-size: cover;
+border: 1px solid black;
+height: 600px;
+width: 1220px;
+}
+.personazhi {
+background: url('iftuari.jpg');
+width: 120px;
+height: 120px;
+padding: 10px;
+margin: 10px;
+float: left;
+}
+.grabitesi {
+background: url('https://getcodingkids.com/wp-content/uploads/2016/05/Thief.jpg');
+width: 120px;
+height: 120px;
+padding: 10px;
+margin: 10px;
+float: left;
+}
+</style>
+</head>
+<body>
+<input type="button" value="Luaj" onclick="nisLojen()";/>
+<div id="fusha">
+<div class="personazhi">i ftuari</div>
+<div class="personazhi">i ftuari</div>
+<div class="personazhi">i ftuari</div>
+<div class="personazhi">i ftuar</div>
+<div class="personazhi">i ftuar</div>
+<div class="personazhi">i ftuar</div>
+<div class="personazhi">i ftuar</div>
+<div class="personazhi">i ftuar</div>
+<div class="grabitesi"><a href="file:///C:/Users/TECHCOM/Documents/kodimet/1%20Pike.html">i panjohur</a></div>
+<div class="personazhi">i ftuar</div>
+<div class="personazhi">i ftuar</div>
+<div class="personazhi">i ftuar</div>
+<div class="personazhi">i ftuar</div>
+<div class="personazhi">i ftuar</div>
+</div>
+<script>
+</script>
+</body>
+</html>
+
+
+google maps
+<!DOCTYPE html>
+<html>
+<head>
+<title>Google Maps</title> 
+</head>
+<body>
+<div style="background-color: lightred">
+<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d13111825.37545761!2d-105.40888547955296!3d36.64734130704078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x875ee23448e12e69%3A0x26b02279d27d382f!2sWyoming!3m2!1d43.0759678!2d-107.29028389999999!4m5!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!3m2!1d37.09024!2d-95.712891!5e0!3m2!1sen!2s!4v1662048634242!5m2!1sen!2s" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div style="float: right">
+<a href="file:///C:/Users/TECHCOM/Documents/kodimet/Loja.html">
+Luaj nje loje?
+</a>
+</div>
+</body>
+</html>
